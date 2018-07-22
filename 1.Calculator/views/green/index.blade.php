@@ -21,10 +21,10 @@ include_once 'functions/functions.php';
     <form action="" method="post" class="form">
         <input type="text" name="first_number" class="textinput" value="<?php print_r($first)?>">
         <select name="math" id="math" class="select">
-            <option value="+" <?php selected($math,'+')?>>+</option>
-            <option value="-" <?php selected($math,'-')?>>-</option>
-            <option value="*" <?php selected($math,'*')?>>x</option>
-            <option value="/" <?php selected($math,'/')?>>/</option>
+            <option value="+" <?php selected($math,"+");?>>+</option>
+            <option value="-" <?php selected($math,"-");?>>-</option>
+            <option value="*" <?php selected($math,"*");?>>x</option>
+            <option value="/" <?php selected($math,"/");?>>/</option>
         </select>
         <input type="text" name="second_number" class="textinput" value="<?php print_r($second)?>">
         <button class="button">Submit</button>

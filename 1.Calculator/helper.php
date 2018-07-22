@@ -1,8 +1,12 @@
 <?php
 /**
- * 1.配置项
- *
+ * 1.Configuration
+ * @param $file string
+ * @param $name string
+ * @param null/string $value
+ * @return mixed
  */
+
 function config ($file, $name, $value = null){
     static $cache = [];
     if ( ! isset($cache[$file])){
